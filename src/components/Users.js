@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { fetchUsers } from '../Api'
-import './Posts.css';
+import './Users.css';
 
-const Posts = () => {
+const Users = () => {
 
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -27,4 +27,4 @@ const Posts = () => {
   )
 }
 
-export default Posts
+export default Users

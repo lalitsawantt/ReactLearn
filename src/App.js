@@ -1,29 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import { lazy, Suspense } from 'react';
-import PostsSkeleton from './components/PostsSkeleton';
-// import Posts from './components/Posts';
-const Posts = lazy(() => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(import('../src/components/Posts')), 3000);
-  })
-})
+import { Routes, Route, Link } from 'react-router';
+import Home from './components/Home';
+import Nav from './Nav';
+import PostsContainer from './components/Posts/PostsContainer';
 
-function App() {
+const App = () => {
   return (
-    <Suspense fallback={<>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-      <PostsSkeleton/>
-    </>}>
-      <Posts/>
-    </Suspense>
-
-  );
+    <div className="App">
+      <Nav/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/posts" element={<PostsContainer/>} />
+      </Routes>
+    </div>
+  )
 }
 
 export default App;

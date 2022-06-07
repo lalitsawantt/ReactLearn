@@ -1,6 +1,6 @@
 import React from 'react'
-import './Posts.css'
-const PostsSkeleton = () => {
+import './Users.css'
+const UserSkeleton = () => {
   return (
     <div className="skeleton_users">
       <div className="skeleton_user">
@@ -12,4 +12,4 @@ const PostsSkeleton = () => {
   )
 }
 
-export default PostsSkeleton
+export default UserSkeleton

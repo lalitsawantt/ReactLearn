@@ -1,0 +1,82 @@
+.posts{
+  width:60%;
+  margin-left: 20%;
+}
+
+.post{
+  margin: 3rem 1rem;
+  width: 100%;
+  height: 20rem;
+  box-shadow: 0 0 20px 8px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+
+}
+
+.title{
+  padding-top: 1rem;
+  width: 80%;
+  margin-left: 10%;
+  height: 7rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.post-text{
+  width: 80%;
+  margin-left: 10%;
+  height: 10rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.skeleton-posts{
+  width:60%;
+  margin-left: 20%;
+}
+.skeleton-post{
+  margin: 3rem 1rem;
+  width: 100%;
+  height: 20rem;
+  box-shadow: 0 0 20px 8px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+}
+.skeleton-title{
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  height: 3rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #cedee9 200px, #e7edf1 400px 
+  );
+  animation: shimmer 1.8s infinite linear;
+  background-color: #e7edf1;
+
+}
+.skeleton-post-text{
+  margin: 3rem 1rem;
+  width: 90%;
+  height: 5rem;
+  box-shadow: 0 0 20px 8px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    90deg, #e7edf1 0px, #cedee9 200px, #e7edf1 400px 
+  );
+  animation: shimmer 1.8s infinite linear;
+  background-color: #e7edf1;
+}
+
+
+@keyframes shimmer {
+  0%{
+    background-position:-400px;
+  }
+  50%{
+    background-position: 700px;
+  }
+  100%{
+    background-position: 700px;
+  }
+}

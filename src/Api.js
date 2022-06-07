@@ -9,3 +9,5 @@ export const fetchPosts = () => {
   console.log("Fetching posts");
   return axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => res.data).catch(err => console.log(err));
 }
+
+// export const fetch

@@ -5,19 +5,22 @@
 
 .user{
   height: 8rem;
-  border: 1px solid black;
-  box-shadow: 3px 3px 5px 5px rgb(199, 191, 191);
+  /* border: 1px solid black; */
+  box-shadow: 0 0 20px 8px rgb(0 0 0 / 5%);
   border-radius: 10px;
-  margin:1rem;
+  margin:2rem;
   padding: 1rem;
 }
 
 .name{
-  width: 70%;
+  text-shadow: 2px 2px 4px #9ca2a5;
+  min-width: 70%;
+  height: 25%;
 }
 
 .text{
   width: 90%;
+  height: 20%;
 }
 
 .skeleton_users{
@@ -27,8 +30,8 @@
 
 .skeleton_user{
   height: 8rem;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px 5px rgb(160, 153, 153);
+  /* border: 1px solid black; */
+  box-shadow: 0 0 20px 8px rgb(0 0 0 / 5%);
   border-radius: 10px;
   margin:1rem;
   padding: 1rem;
